@@ -10,6 +10,13 @@
 		8FD875AB1C762A8D00181FA6 /* Time.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD875AA1C762A8D00181FA6 /* Time.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8FD875B21C762A8D00181FA6 /* Time.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD875A71C762A8D00181FA6 /* Time.framework */; };
 		8FD875B71C762A8D00181FA6 /* TimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD875B61C762A8D00181FA6 /* TimeTests.swift */; };
+		8FD875C21C762A9700181FA6 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD875C11C762A9700181FA6 /* Clock.swift */; };
+		8FD875C41C762AB400181FA6 /* NSDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD875C31C762AB400181FA6 /* NSDateFormatter.swift */; };
+		8FD875C71C762AF500181FA6 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD875C51C762AF500181FA6 /* NSDate.swift */; };
+		8FD875C81C762AF500181FA6 /* NSTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD875C61C762AF500181FA6 /* NSTimer.swift */; };
+		8FD875CA1C762AFD00181FA6 /* NSCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD875C91C762AFD00181FA6 /* NSCalendar.swift */; };
+		8FD875F61C762EEF00181FA6 /* NSTimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD875F51C762EEF00181FA6 /* NSTimeInterval.swift */; };
+		8FD875F81C762F2600181FA6 /* ClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD875F71C762F2600181FA6 /* ClockTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,13 @@
 		8FD875B11C762A8D00181FA6 /* TimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD875B61C762A8D00181FA6 /* TimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTests.swift; sourceTree = "<group>"; };
 		8FD875B81C762A8D00181FA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FD875C11C762A9700181FA6 /* Clock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
+		8FD875C31C762AB400181FA6 /* NSDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateFormatter.swift; sourceTree = "<group>"; };
+		8FD875C51C762AF500181FA6 /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
+		8FD875C61C762AF500181FA6 /* NSTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTimer.swift; sourceTree = "<group>"; };
+		8FD875C91C762AFD00181FA6 /* NSCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSCalendar.swift; sourceTree = "<group>"; };
+		8FD875F51C762EEF00181FA6 /* NSTimeInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTimeInterval.swift; sourceTree = "<group>"; };
+		8FD875F71C762F2600181FA6 /* ClockTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +85,12 @@
 		8FD875A91C762A8D00181FA6 /* Time */ = {
 			isa = PBXGroup;
 			children = (
+				8FD875C51C762AF500181FA6 /* NSDate.swift */,
+				8FD875C61C762AF500181FA6 /* NSTimer.swift */,
+				8FD875C31C762AB400181FA6 /* NSDateFormatter.swift */,
+				8FD875C91C762AFD00181FA6 /* NSCalendar.swift */,
+				8FD875F51C762EEF00181FA6 /* NSTimeInterval.swift */,
+				8FD875C11C762A9700181FA6 /* Clock.swift */,
 				8FD875AA1C762A8D00181FA6 /* Time.h */,
 				8FD875AC1C762A8D00181FA6 /* Info.plist */,
 			);
@@ -80,6 +100,7 @@
 		8FD875B51C762A8D00181FA6 /* TimeTests */ = {
 			isa = PBXGroup;
 			children = (
+				8FD875F71C762F2600181FA6 /* ClockTests.swift */,
 				8FD875B61C762A8D00181FA6 /* TimeTests.swift */,
 				8FD875B81C762A8D00181FA6 /* Info.plist */,
 			);
@@ -194,6 +215,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FD875F61C762EEF00181FA6 /* NSTimeInterval.swift in Sources */,
+				8FD875C21C762A9700181FA6 /* Clock.swift in Sources */,
+				8FD875C71C762AF500181FA6 /* NSDate.swift in Sources */,
+				8FD875C81C762AF500181FA6 /* NSTimer.swift in Sources */,
+				8FD875CA1C762AFD00181FA6 /* NSCalendar.swift in Sources */,
+				8FD875C41C762AB400181FA6 /* NSDateFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FD875F81C762F2600181FA6 /* ClockTests.swift in Sources */,
 				8FD875B71C762A8D00181FA6 /* TimeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +336,7 @@
 		8FD875BC1C762A8D00181FA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -318,12 +347,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.silverback-it.Time";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		8FD875BD1C762A8D00181FA6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
