@@ -84,6 +84,7 @@ public extension NSCalendar
     /// - parameter unit : The calendar-unit to search for
     /// - parameter date : An optional date from where to start the search - defaults to `NSDate()`
     /// returns : `date` rounded to `unit` and the incremented by one `unit`
+    /// - note: cannot be used with `Era`
     func ceil(date: NSDate? = NSDate(), toWhole unit: NSCalendarUnit) -> NSDate?
     {
         if let roundedDate = floor(date, toWhole: unit)

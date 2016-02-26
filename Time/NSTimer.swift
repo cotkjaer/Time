@@ -53,14 +53,3 @@ public extension NSTimer
         return timer
     }
 }
-
-public extension Double
-{
-    var second:  NSTimeInterval { return self }
-    var seconds: NSTimeInterval { return self }
-    var minute:  NSTimeInterval { return self * 60 }
-    var minutes: NSTimeInterval { return self * 60 }
-    var hour:    NSTimeInterval { return self * 3600 }
-    var hours:   NSTimeInterval { return self * 3600 }
-}
-

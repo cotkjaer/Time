@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8FCE6B401C8048FD0079A587 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE6B3F1C8048FD0079A587 /* DateTests.swift */; };
+		8FCE6B421C804A1B0079A587 /* RoundingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE6B411C804A1B0079A587 /* RoundingTests.swift */; };
+		8FCE6B441C804EC00079A587 /* NSCalendarUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE6B431C804EC00079A587 /* NSCalendarUnit.swift */; };
 		8FD875AB1C762A8D00181FA6 /* Time.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD875AA1C762A8D00181FA6 /* Time.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8FD875B21C762A8D00181FA6 /* Time.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD875A71C762A8D00181FA6 /* Time.framework */; };
 		8FD875B71C762A8D00181FA6 /* TimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD875B61C762A8D00181FA6 /* TimeTests.swift */; };
@@ -30,6 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8FCE6B3F1C8048FD0079A587 /* DateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
+		8FCE6B411C804A1B0079A587 /* RoundingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundingTests.swift; sourceTree = "<group>"; };
+		8FCE6B431C804EC00079A587 /* NSCalendarUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSCalendarUnit.swift; sourceTree = "<group>"; };
 		8FD875A71C762A8D00181FA6 /* Time.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Time.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD875AA1C762A8D00181FA6 /* Time.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Time.h; sourceTree = "<group>"; };
 		8FD875AC1C762A8D00181FA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,6 +96,7 @@
 				8FD875C31C762AB400181FA6 /* NSDateFormatter.swift */,
 				8FD875C91C762AFD00181FA6 /* NSCalendar.swift */,
 				8FD875F51C762EEF00181FA6 /* NSTimeInterval.swift */,
+				8FCE6B431C804EC00079A587 /* NSCalendarUnit.swift */,
 				8FD875C11C762A9700181FA6 /* Clock.swift */,
 				8FD875AA1C762A8D00181FA6 /* Time.h */,
 				8FD875AC1C762A8D00181FA6 /* Info.plist */,
@@ -103,6 +110,8 @@
 				8FD875F71C762F2600181FA6 /* ClockTests.swift */,
 				8FD875B61C762A8D00181FA6 /* TimeTests.swift */,
 				8FD875B81C762A8D00181FA6 /* Info.plist */,
+				8FCE6B3F1C8048FD0079A587 /* DateTests.swift */,
+				8FCE6B411C804A1B0079A587 /* RoundingTests.swift */,
 			);
 			path = TimeTests;
 			sourceTree = "<group>";
@@ -217,6 +226,7 @@
 			files = (
 				8FD875F61C762EEF00181FA6 /* NSTimeInterval.swift in Sources */,
 				8FD875C21C762A9700181FA6 /* Clock.swift in Sources */,
+				8FCE6B441C804EC00079A587 /* NSCalendarUnit.swift in Sources */,
 				8FD875C71C762AF500181FA6 /* NSDate.swift in Sources */,
 				8FD875C81C762AF500181FA6 /* NSTimer.swift in Sources */,
 				8FD875CA1C762AFD00181FA6 /* NSCalendar.swift in Sources */,
@@ -229,7 +239,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FD875F81C762F2600181FA6 /* ClockTests.swift in Sources */,
+				8FCE6B401C8048FD0079A587 /* DateTests.swift in Sources */,
 				8FD875B71C762A8D00181FA6 /* TimeTests.swift in Sources */,
+				8FCE6B421C804A1B0079A587 /* RoundingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +419,7 @@
 				8FD875BD1C762A8D00181FA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8FD875BE1C762A8D00181FA6 /* Build configuration list for PBXNativeTarget "TimeTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +428,7 @@
 				8FD875C01C762A8D00181FA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -6,19 +6,11 @@
 //  Copyright © 2016 Christian Otkjær. All rights reserved.
 //
 
-import Foundation
-
 /**
  NSTimeInterval conversion extensions
  */
 public extension Int
 {
-    var years: NSTimeInterval
-        { return 365 * self.days }
-    
-    var year: NSTimeInterval
-        { return self.years }
-    
     var weeks: NSTimeInterval
         { return 7 * days }
     
