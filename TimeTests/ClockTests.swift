@@ -21,7 +21,7 @@ class ClockTests: XCTestCase
             
             runCounter++
         
-            if runCounter > 10 { expectation.fulfill() }
+            if runCounter > 3 { expectation.fulfill() }
         }
 
         XCTAssertEqual(runCounter, 0)
@@ -32,7 +32,7 @@ class ClockTests: XCTestCase
         XCTAssertEqual(runCounter, 0)
         XCTAssertEqual(clock.running, true)
         
-        waitForExpectationsWithTimeout(12) { e in
+        waitForExpectationsWithTimeout(5) { e in
             
             if let error = e
             {

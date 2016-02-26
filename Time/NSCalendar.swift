@@ -35,38 +35,32 @@ public extension NSCalendar
         case NSCalendarUnit.Era:
             
             c.year = rangeOfUnit(.Year, inUnit: .Era, forDate: date).location
-//            return round(dateFromComponents(c), toWhole: .Year)
-            fallthrough
+            return floor(dateFromComponents(c), toWhole: .Year)
             
         case NSCalendarUnit.Year:
             
             c.month = rangeOfUnit(.Month, inUnit: .Year, forDate: date).location
-//            return round(dateFromComponents(c), toWhole: .Month)
-            fallthrough
+            return floor(dateFromComponents(c), toWhole: .Month)
             
         case NSCalendarUnit.Month:
             
             c.day = rangeOfUnit(.Day, inUnit: .Month, forDate: date).location
-//            return round(dateFromComponents(c), toWhole: .Day)
-            fallthrough
+            return floor(dateFromComponents(c), toWhole: .Day)
             
         case NSCalendarUnit.Day:
             
             c.hour = rangeOfUnit(.Hour, inUnit: .Day, forDate: date).location
-//            return round(dateFromComponents(c), toWhole: .Hour)
-            fallthrough
+            return floor(dateFromComponents(c), toWhole: .Hour)
 
         case NSCalendarUnit.Hour:
 
             c.minute = rangeOfUnit(.Minute, inUnit: .Hour, forDate: date).location
-//            return round(dateFromComponents(c), toWhole: .Minute)
-            fallthrough
+            return floor(dateFromComponents(c), toWhole: .Minute)
 
         case NSCalendarUnit.Minute:
             
             c.second = rangeOfUnit(.Second, inUnit: .Minute, forDate: date).location
-//            return round(dateFromComponents(c), toWhole: .Second)
-            fallthrough
+            return floor(dateFromComponents(c), toWhole: .Second)
         
         case NSCalendarUnit.Second:
             
