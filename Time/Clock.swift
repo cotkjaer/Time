@@ -8,18 +8,18 @@
 
 import Foundation
 
-private let debugFormatter = NSDateFormatter(timeStyle: .FullStyle, dateStyle: .NoStyle)
+private let debugFormatter = DateFormatter(timeStyle: .full, dateStyle: .none)
 
-public class Clock
+open class Clock
 {
-    private let calendar = NSCalendar.autoupdatingCurrentCalendar()
+    fileprivate let calendar = Calendar.autoupdatingCurrent
     
-    let unit: NSCalendarUnit
+    let unit: NSCalendar.Unit
     let closure : (()->())
 
-    private var timer: NSTimer?
+    fileprivate var timer: Timer?
     
-    public init(unit: NSCalendarUnit, closure: ()->())
+    public init(unit: NSCalendar.Unit, closure: @escaping ()->())
     {
         self.unit = unit
         self.closure = closure
@@ -30,14 +30,14 @@ public class Clock
         timer?.invalidate()
     }
     
-    public var running : Bool { return timer?.valid == true }
+    open var running : Bool { return timer?.isValid == true }
     
-    public func start()
+    open func start()
     {
         scheduleTimer()
     }
     
-    public func stop()
+    open func stop()
     {
         unscheduleTimer()
     }
@@ -54,11 +54,11 @@ public class Clock
         
         if let date = calendar.nextWhole(unit)
         {
-            debugPrint("nextdate for \(debugFormatter.stringFromDate(NSDate())) -> \(debugFormatter.stringFromDate(date))")
+            debugPrint("nextdate for \(debugFormatter.string(from: Date())) -> \(debugFormatter.string(from: date))")
 
-            let timer = NSTimer(fireDate: date, interval: 0, target: self, selector: Selector("handleTimer"), userInfo: nil, repeats: false)
+            let timer = Timer(fireAt: date, interval: 0, target: self, selector: #selector(Clock.handleTimer), userInfo: nil, repeats: false)
             
-            NSRunLoop.mainRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
+            RunLoop.main.add(timer, forMode: RunLoopMode.commonModes)
             
             self.timer = timer
         }
@@ -68,7 +68,7 @@ public class Clock
         }
     }
     
-    @objc private func handleTimer()
+    @objc fileprivate func handleTimer()
     {
         scheduleTimer()
         closure()

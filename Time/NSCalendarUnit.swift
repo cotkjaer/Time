@@ -10,33 +10,33 @@ import Foundation
 
 // MARK: - CustomDebugStringConvertible
 
-extension NSCalendarUnit : CustomDebugStringConvertible, CustomStringConvertible
+extension NSCalendar.Unit : CustomDebugStringConvertible, CustomStringConvertible
 {
-    internal static func nameFor(unit: NSCalendarUnit) -> String
+    internal static func nameFor(_ unit: NSCalendar.Unit) -> String
     {
         switch unit
         {
-        case Era /* NSEraCalendarUnit */: return "Era"
-        case Year /* NSYearCalendarUnit */: return "Year"
-        case Month /* NSMonthCalendarUnit */: return "Month"
-        case Day /* NSDayCalendarUnit */: return "Day"
-        case Hour /* NSHourCalendarUnit */: return "Hour"
-        case Minute /* NSMinuteCalendarUnit */: return "Minute"
-        case Second /* NSSecondCalendarUnit */: return "Second"
-        case Nanosecond: return "Nanosecond"
-        case Weekday /* NSWeekdayCalendarUnit */: return "Weekday"
-        case WeekdayOrdinal /* NSWeekdayOrdinalCalendarUnit */: return "WeekdayOrdinal"
-        case Quarter /* NSQuarterCalendarUnit */: return "Quarter"
-        case WeekOfMonth /* NSWeekOfMonthCalendarUnit */: return "WeekOfMonth"
-        case WeekOfYear /* NSWeekOfYearCalendarUnit */: return "WeekOfYear"
-        case YearForWeekOfYear /* NSYearForWeekOfYearCalendarUnit */: return "YearForWeekOfYear"
-        case Calendar /* NSCalendarCalendarUnit */: return "Calendar"
-        case TimeZone /* NSTimeZoneCalendarUnit */: return "TimeZone"
+        case era /* NSEraCalendarUnit */: return "Era"
+        case year /* NSYearCalendarUnit */: return "Year"
+        case month /* NSMonthCalendarUnit */: return "Month"
+        case day /* NSDayCalendarUnit */: return "Day"
+        case hour /* NSHourCalendarUnit */: return "Hour"
+        case minute /* NSMinuteCalendarUnit */: return "Minute"
+        case second /* NSSecondCalendarUnit */: return "Second"
+        case nanosecond: return "Nanosecond"
+        case weekday /* NSWeekdayCalendarUnit */: return "Weekday"
+        case weekdayOrdinal /* NSWeekdayOrdinalCalendarUnit */: return "WeekdayOrdinal"
+        case quarter /* NSQuarterCalendarUnit */: return "Quarter"
+        case weekOfMonth /* NSWeekOfMonthCalendarUnit */: return "WeekOfMonth"
+        case weekOfYear /* NSWeekOfYearCalendarUnit */: return "WeekOfYear"
+        case yearForWeekOfYear /* NSYearForWeekOfYearCalendarUnit */: return "YearForWeekOfYear"
+        case calendar /* NSCalendarCalendarUnit */: return "Calendar"
+        case timeZone /* NSTimeZoneCalendarUnit */: return "TimeZone"
         default: return "NSCalendarUnit(rawValue: \(unit.rawValue))"
         }
     }
 
-    public var debugDescription : String { return NSCalendarUnit.nameFor(self) }
+    public var debugDescription : String { return NSCalendar.Unit.nameFor(self) }
     
-    public var description : String { return NSCalendarUnit.nameFor(self) }
+    public var description : String { return NSCalendar.Unit.nameFor(self) }
 }

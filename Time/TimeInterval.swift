@@ -1,6 +1,6 @@
 //
-//  NSTimeInterval.swift
-//  Silverback
+//  TimeInterval.swift
+//  Time
 //
 //  Created by Christian Otkjær on 15/02/16.
 //  Copyright © 2016 Christian Otkjær. All rights reserved.
@@ -11,33 +11,33 @@
  */
 public extension Int
 {
-    var weeks: NSTimeInterval
+    var weeks: TimeInterval
         { return 7 * days }
     
-    var week: NSTimeInterval
+    var week: TimeInterval
         { return weeks }
     
-    var days: NSTimeInterval
+    var days: TimeInterval
         { return 24 * hours }
     
-    var day: NSTimeInterval
+    var day: TimeInterval
         { return days }
     
-    var hours: NSTimeInterval
+    var hours: TimeInterval
         { return 60 * minutes }
     
-    var hour: NSTimeInterval
+    var hour: TimeInterval
         { return self.hours }
     
-    var minutes: NSTimeInterval
+    var minutes: TimeInterval
         { return 60 * seconds }
     
-    var minute: NSTimeInterval
+    var minute: TimeInterval
         { return minutes }
     
-    var seconds: NSTimeInterval
-        { return NSTimeInterval(self) }
+    var seconds: TimeInterval
+        { return TimeInterval(self) }
     
-    var second: NSTimeInterval
+    var second: TimeInterval
         { return seconds }
 }

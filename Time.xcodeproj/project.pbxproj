@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F38B7311DBE11E000D36455 /* DateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F38B7301DBE11E000D36455 /* DateComponents.swift */; };
 		8FCE6B401C8048FD0079A587 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE6B3F1C8048FD0079A587 /* DateTests.swift */; };
-		8FCE6B421C804A1B0079A587 /* RoundingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE6B411C804A1B0079A587 /* RoundingTests.swift */; };
+		8FCE6B421C804A1B0079A587 /* DateRoundingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE6B411C804A1B0079A587 /* DateRoundingTests.swift */; };
 		8FCE6B441C804EC00079A587 /* NSCalendarUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE6B431C804EC00079A587 /* NSCalendarUnit.swift */; };
 		8FD875AB1C762A8D00181FA6 /* Time.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD875AA1C762A8D00181FA6 /* Time.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8FD875B21C762A8D00181FA6 /* Time.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD875A71C762A8D00181FA6 /* Time.framework */; };
 		8FD875B71C762A8D00181FA6 /* TimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD875B61C762A8D00181FA6 /* TimeTests.swift */; };
 		8FD875C21C762A9700181FA6 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD875C11C762A9700181FA6 /* Clock.swift */; };
-		8FD875C41C762AB400181FA6 /* NSDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD875C31C762AB400181FA6 /* NSDateFormatter.swift */; };
-		8FD875C71C762AF500181FA6 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD875C51C762AF500181FA6 /* NSDate.swift */; };
-		8FD875C81C762AF500181FA6 /* NSTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD875C61C762AF500181FA6 /* NSTimer.swift */; };
-		8FD875CA1C762AFD00181FA6 /* NSCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD875C91C762AFD00181FA6 /* NSCalendar.swift */; };
-		8FD875F61C762EEF00181FA6 /* NSTimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD875F51C762EEF00181FA6 /* NSTimeInterval.swift */; };
+		8FD875C41C762AB400181FA6 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD875C31C762AB400181FA6 /* DateFormatter.swift */; };
+		8FD875C71C762AF500181FA6 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD875C51C762AF500181FA6 /* Date.swift */; };
+		8FD875C81C762AF500181FA6 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD875C61C762AF500181FA6 /* Timer.swift */; };
+		8FD875CA1C762AFD00181FA6 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD875C91C762AFD00181FA6 /* Calendar.swift */; };
+		8FD875F61C762EEF00181FA6 /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD875F51C762EEF00181FA6 /* TimeInterval.swift */; };
 		8FD875F81C762F2600181FA6 /* ClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD875F71C762F2600181FA6 /* ClockTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,8 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F38B7301DBE11E000D36455 /* DateComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateComponents.swift; sourceTree = "<group>"; };
 		8FCE6B3F1C8048FD0079A587 /* DateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
-		8FCE6B411C804A1B0079A587 /* RoundingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundingTests.swift; sourceTree = "<group>"; };
+		8FCE6B411C804A1B0079A587 /* DateRoundingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateRoundingTests.swift; sourceTree = "<group>"; };
 		8FCE6B431C804EC00079A587 /* NSCalendarUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSCalendarUnit.swift; sourceTree = "<group>"; };
 		8FD875A71C762A8D00181FA6 /* Time.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Time.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD875AA1C762A8D00181FA6 /* Time.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Time.h; sourceTree = "<group>"; };
@@ -43,11 +45,11 @@
 		8FD875B61C762A8D00181FA6 /* TimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTests.swift; sourceTree = "<group>"; };
 		8FD875B81C762A8D00181FA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FD875C11C762A9700181FA6 /* Clock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
-		8FD875C31C762AB400181FA6 /* NSDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateFormatter.swift; sourceTree = "<group>"; };
-		8FD875C51C762AF500181FA6 /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
-		8FD875C61C762AF500181FA6 /* NSTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTimer.swift; sourceTree = "<group>"; };
-		8FD875C91C762AFD00181FA6 /* NSCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSCalendar.swift; sourceTree = "<group>"; };
-		8FD875F51C762EEF00181FA6 /* NSTimeInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTimeInterval.swift; sourceTree = "<group>"; };
+		8FD875C31C762AB400181FA6 /* DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		8FD875C51C762AF500181FA6 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		8FD875C61C762AF500181FA6 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		8FD875C91C762AFD00181FA6 /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		8FD875F51C762EEF00181FA6 /* TimeInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
 		8FD875F71C762F2600181FA6 /* ClockTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,12 +93,13 @@
 		8FD875A91C762A8D00181FA6 /* Time */ = {
 			isa = PBXGroup;
 			children = (
-				8FD875C51C762AF500181FA6 /* NSDate.swift */,
-				8FD875C61C762AF500181FA6 /* NSTimer.swift */,
-				8FD875C31C762AB400181FA6 /* NSDateFormatter.swift */,
-				8FD875C91C762AFD00181FA6 /* NSCalendar.swift */,
-				8FD875F51C762EEF00181FA6 /* NSTimeInterval.swift */,
+				8FD875C51C762AF500181FA6 /* Date.swift */,
+				8FD875C61C762AF500181FA6 /* Timer.swift */,
+				8FD875C31C762AB400181FA6 /* DateFormatter.swift */,
+				8FD875C91C762AFD00181FA6 /* Calendar.swift */,
+				8FD875F51C762EEF00181FA6 /* TimeInterval.swift */,
 				8FCE6B431C804EC00079A587 /* NSCalendarUnit.swift */,
+				8F38B7301DBE11E000D36455 /* DateComponents.swift */,
 				8FD875C11C762A9700181FA6 /* Clock.swift */,
 				8FD875AA1C762A8D00181FA6 /* Time.h */,
 				8FD875AC1C762A8D00181FA6 /* Info.plist */,
@@ -111,7 +114,7 @@
 				8FD875B61C762A8D00181FA6 /* TimeTests.swift */,
 				8FD875B81C762A8D00181FA6 /* Info.plist */,
 				8FCE6B3F1C8048FD0079A587 /* DateTests.swift */,
-				8FCE6B411C804A1B0079A587 /* RoundingTests.swift */,
+				8FCE6B411C804A1B0079A587 /* DateRoundingTests.swift */,
 			);
 			path = TimeTests;
 			sourceTree = "<group>";
@@ -173,14 +176,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Christian Otkjær";
 				TargetAttributes = {
 					8FD875A61C762A8D00181FA6 = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0800;
 					};
 					8FD875B01C762A8D00181FA6 = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -224,13 +229,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FD875F61C762EEF00181FA6 /* NSTimeInterval.swift in Sources */,
+				8FD875F61C762EEF00181FA6 /* TimeInterval.swift in Sources */,
 				8FD875C21C762A9700181FA6 /* Clock.swift in Sources */,
 				8FCE6B441C804EC00079A587 /* NSCalendarUnit.swift in Sources */,
-				8FD875C71C762AF500181FA6 /* NSDate.swift in Sources */,
-				8FD875C81C762AF500181FA6 /* NSTimer.swift in Sources */,
-				8FD875CA1C762AFD00181FA6 /* NSCalendar.swift in Sources */,
-				8FD875C41C762AB400181FA6 /* NSDateFormatter.swift in Sources */,
+				8F38B7311DBE11E000D36455 /* DateComponents.swift in Sources */,
+				8FD875C71C762AF500181FA6 /* Date.swift in Sources */,
+				8FD875C81C762AF500181FA6 /* Timer.swift in Sources */,
+				8FD875CA1C762AFD00181FA6 /* Calendar.swift in Sources */,
+				8FD875C41C762AB400181FA6 /* DateFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +247,7 @@
 				8FD875F81C762F2600181FA6 /* ClockTests.swift in Sources */,
 				8FCE6B401C8048FD0079A587 /* DateTests.swift in Sources */,
 				8FD875B71C762A8D00181FA6 /* TimeTests.swift in Sources */,
-				8FCE6B421C804A1B0079A587 /* RoundingTests.swift in Sources */,
+				8FCE6B421C804A1B0079A587 /* DateRoundingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,8 +275,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -317,8 +325,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -338,6 +348,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -349,6 +360,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -360,6 +372,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -367,6 +380,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -377,6 +391,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.silverback-it.Time";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -387,6 +402,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.silverback-it.TimeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -397,6 +413,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.silverback-it.TimeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
